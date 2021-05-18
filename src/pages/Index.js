@@ -46,24 +46,24 @@ function Index(props){
                     type="text"
                     value={newForm.name}
                     name="name"
-                    placeholder="name"
+                    placeholder="NAME"
                     onChange={handleChange}
                 />
                 <input
                     type="text"
                     value={newForm.countryOfOrigin}
                     name="countryOfOrigin"
-                    placeholder="country of origin"
+                    placeholder="ORIGIN"
                     onChange={handleChange}
                 />
                 <input
                     type="text"
                     value={newForm.image}
                     name="image"
-                    placeholder="image URL"
+                    placeholder="IMAGE URL"
                     onChange={handleChange}
                 />
-                <input type="submit" value="Create Cheese"/>
+                <input type="submit" value="CREATE CHEESE"/>
             </form>
             {props.cheese ? loaded() : loading()}
        </section> 

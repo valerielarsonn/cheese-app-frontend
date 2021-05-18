@@ -1,8 +1,10 @@
-// --------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 // VARIABLES
-// --------------------------
-$maincolor: black;
-$contrastcolor: white;
+
+$maincolor: rgb(243, 191, 21);
+$contrastcolor: orangered;
 
 @mixin white-text-black-bg {
   color: $contrastcolor;
@@ -14,14 +16,14 @@ $contrastcolor: white;
   background-color: $contrastcolor;
 }
 
-// --------------------------
+
 // Header
-// --------------------------
 
 nav {
   @include white-text-black-bg;
   display: flex;
   justify-content: flex-start;
+  font-family: 'Fredoka One', cursive;
 
   a {
     @include white-text-black-bg;
@@ -42,6 +44,7 @@ div {
       padding: 10px;
       font-size: 1.1em;
       margin: 10px;
+      font-family: 'Fredoka One', cursive;
 
       &[type="submit"]:hover {
         @include black-test-white-bg;
@@ -58,6 +61,7 @@ button#delete {
   margin: auto;
   font-size: 1.3em;
   padding: 10px;
+  border-radius: 90px;
 }
 
 // images
@@ -67,4 +71,31 @@ img {
   height: 300px;
   border-radius: 90px;
   object-fit: cover;
+}
+
+body {
+  background-image: url(https://newvisualthings.com/wp-content/uploads/2020/03/cover_1-1184x790.jpg); 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-position: center; 
+  background-size: auto; 
+  background-size: cover;
+}
+
+h1 {
+  color:rgb(243, 191, 21);
+  text-shadow: 2px 2px 5px orangered;
+  font-family: 'Fredoka One', cursive;
+}
+
+h2 {
+  color:rgb(243, 191, 21);
+  text-shadow: 2px 2px 5px orangered;
+  font-family: 'Fredoka One', cursive;
+}
+
+section {
+  color:rgb(243, 191, 21);
+  text-shadow: 2px 2px 5px orangered;
+  font-family: 'Fredoka One', cursive;
 }
